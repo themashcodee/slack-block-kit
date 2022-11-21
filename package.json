@@ -1,5 +1,5 @@
 {
-  "name": "slack-block-kit",
+  "name": "slack-block-toolkit",
   "version": "0.0.1",
   "description": "Slack block builder",
   "main": "lib/index.js",
