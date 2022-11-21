@@ -2,11 +2,36 @@
   "name": "slack-block-kit",
   "version": "0.0.1",
   "description": "Slack block builder",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themashcodee/slack-block-kit.git"
+  },
+  "keywords": [
+    "slack",
+    "slack block kit builder",
+    "slack block",
+    "slack block creator",
+    "slack block builder",
+    "slack elements builder",
+    "slack elements creator",
+    "slack elements"
+  ],
+  "author": "Mash Codee <codeemash@gmai.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themashcodee/slack-block-kit/issues"
+  },
+  "homepage": "https://github.com/themashcodee/slack-block-kit#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
