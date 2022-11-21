@@ -1,9 +1,8 @@
 {
     "compilerOptions": {
         "outDir": "lib",
-        "target": "ES2016",
+        "target": "es5",
         "allowJs": false,
-        "skipLibCheck": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "noUncheckedIndexedAccess": true,
@@ -18,20 +17,15 @@
         "noUnusedParameters": false,
         "noImplicitAny": true,
         "pretty": true,
-        "noEmit": false,
         "esModuleInterop": true,
         "module": "commonjs",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "isolatedModules": true,
-        // "incremental": true,
-        "rootDir": ".",
-        "sourceMap": true,
         "baseUrl": "src",
         "declaration": true,
         "typeRoots": [
             "node_modules/@types",
-            "src/@types"
+            "./src/@types"
         ],
     },
     "include": [

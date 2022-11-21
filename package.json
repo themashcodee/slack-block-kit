@@ -1,12 +1,14 @@
 {
   "name": "slack-block-toolkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Slack block builder",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "prepare": "npm run build",
+    "publish:local": "npm run build && npm pack --pack-destination ~",
+    "publish:prod": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -29,9 +31,10 @@
   },
   "homepage": "https://github.com/themashcodee/slack-block-kit#readme",
   "devDependencies": {
+    "tsc-alias": "^1.7.1",
     "typescript": "^4.9.3"
   },
   "files": [
-    "lib/**/*"
+    "./lib/**/*"
   ]
 }
